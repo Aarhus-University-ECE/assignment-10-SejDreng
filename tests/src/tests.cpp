@@ -96,6 +96,7 @@ TEST_CASE("btree") {
 	root = Insert(45, root);
 	root = Insert(42, root);
 
+
 	REQUIRE(Contains(20, root) == 1);
 	REQUIRE(Contains(5, root) == 1);
 	REQUIRE(Contains(1, root) == 1);
@@ -150,6 +151,7 @@ TEST_CASE("btree") {
 	root = Remove(42, root);
 	root = Insert(16, root);
 
+
 	REQUIRE(Contains(20, root) == 1);
 	REQUIRE(Contains(5, root) == 1);
 	REQUIRE(Contains(1, root) == 1);
@@ -193,5 +195,5 @@ TEST_CASE("btree") {
 	root = Remove(20, root);
 	root = Remove(16, root);
 
-	free(root);
+	//free(root);
 }
